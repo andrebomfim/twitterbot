@@ -23,7 +23,7 @@ Inspired by Twitter's bot [_Grande Sertão_](https://twitter.com/veredasbot).
 5. requirements.txt for deployment in a cloud service such as Heroku.
 6. runtime.txt for deployment in a cloud service such as Heroku.
 
-## About the Script, Source and Destination files.
+## About the Script, Source and Destination files
 
 The text you intend to publish on Twitter should be saved in the source.txt file. Each time your script is run, it randomly chooses one line of text from the source file and checks if it's been posted before. If not, it publishes on Twitter. If yes, it chooses another line of text.
 
