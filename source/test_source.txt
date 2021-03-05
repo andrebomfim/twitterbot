@@ -1,0 +1,4 @@
+First test from the source file.
+Second test from the source file.
+Third test from the source file.|Includes a new line.
+Fourth test from the source file. +$Includes a thread.
