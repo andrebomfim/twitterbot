@@ -1,0 +1,4 @@
+This is the destination file for the tweets from the source file.
+If you see here the same content written there, it means that it won't be picked again, unless this file is full with all content from the source file.
+In this case, this file will be deleted and written again, beginning with the first tweet.
+You can erase all these instructions in order to begin your project.

@@ -1,0 +1,4 @@
+Each line of this text file is a tweet.
+If you want to split one tweet into many lines, use a vertical line:|Don't create a new line for the same tweet.
+If your content is longer then 280 characters, the script will create a thread. I chose to manually indicate when to separate it through the dollar bill sign: $This is the beginning of a thread. You can have as as you want.
+You can erase all these instructions in order to begin your project.
