@@ -17,11 +17,10 @@ Inspired by Twitter's bot [_Grande Sertão_](https://twitter.com/veredasbot).
 ## Contents
 
 1. twitterbot.py
-2. source folder and source.txt
-3. destination folder and destination.txt
-4. test folder and source and destination txt files for testing.
-5. requirements.txt for deployment in a cloud service such as Heroku.
-6. runtime.txt for deployment in a cloud service such as Heroku.
+2. source folder with source text file and test text file.
+3. destination folder with destination text file and test text file.
+4. requirements.txt for deployment in a cloud service such as Heroku.
+5. runtime.txt for deployment in a cloud service such as Heroku.
 
 ## About the Script, Source and Destination files
 
