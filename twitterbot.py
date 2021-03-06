@@ -32,7 +32,7 @@ def open_text(source_file, destination_file):
         tweets.close()
         new_tweet = choose_text(source_list, tweets_list)
         with open(destination_file, 'a', encoding='utf8') as tweets:
-            tweets.write(text)
+            tweets.write(new_tweet)
     new_tweet = new_tweet.replace('\n', '').replace('|', '\n').strip()
     return new_tweet
 
@@ -48,6 +48,8 @@ def choose_text(source_list, tweets_list):
     """
     new_tweet = random.choice(source_list)
     if new_tweet in tweets_list:
+        choose_text(source_list, tweets_list)
+    elif new_tweet == '':
         choose_text(source_list, tweets_list)
     else:
         return new_tweet
@@ -94,7 +96,7 @@ def twitter_bot(source_file, destination_file):
     Destination File: Path to destination text file.
     """
     new_tweet = open_text(source_file, destination_file)
-    print(f'The new tweet is:\n{new_tweet})
+    print(f'The new tweet is:\n{new_tweet}')
     post_tweet(new_tweet)
     print('Posted successfully!')
 
@@ -116,7 +118,7 @@ def test_twitter_bot():
     DESTINATION_TEST_FILE = './destination/test_destination.txt'
     new_test_tweet = open_text(SOURCE_TEST_FILE,
                                DESTINATION_TEST_FILE)
-    print(f'Testing...\nThe new tweet is:\n{new_test_tweet})
+    print(f'Testing...\nThe new tweet is:\n{new_test_tweet}')
     post_tweet(new_test_tweet)
     print('Posted successfully!')
 
